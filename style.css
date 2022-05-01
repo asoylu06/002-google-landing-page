@@ -39,6 +39,7 @@ ul.right-side > li:nth-child(3) {
 
 ul.right-side > li:nth-child(3):hover {
     background-color: rgba(60,64,67,.08);
+    cursor: pointer;
 }
 
 ul.right-side > li:nth-child(4) > a {
