@@ -140,8 +140,6 @@
 
                 </div>
 
-               
-
             </li>
             <li><a href="https://accounts.google.com/servicelogin">Sign In</a></li>
     </nav>
@@ -153,15 +151,20 @@
         <div class="search-box">
             <form action="https://www.google.com/search" method="GET">
                 <div class="search-bar">
-                    <img src="./images/Magnifying_glass_icon.png" alt="mglass icon">
-                    <input type="text" name="q" placeholder="Search Google" autocomplete="off" autofocus>
-                    <img src="./images/google_microphone.png" alt="mic icon">
+                    <img id="glass-icon" src="./images/Magnifying_glass_icon.png" alt="mglass icon">
+                    <input type="search" name="q" id="search-input" placeholder="Search Google" autofocus autocomplete="off">
+                    <div class="tooltip"><img id="mic-icon" src="./images/google_microphone.png" alt="mic icon"><span class="tooltiptext">Search by voice</span></div>
                 </div>
+
                 <div class="buttons">
                     <button type="submit">Google Search</button>
                     <button type="submit" formaction="#">I'm Feeling Lucky</button>
                 </div>
             </form>
+            <!-- <form action="http://suggestqueries.google.com/complete/search" method="GET">
+                <input type="text" name="q" id="search-ii" placeholder="Search Google" autofocus autocomplete="off">
+                <button type="submit">suggestions</button>
+            </form> -->
         </div>
     
         <div class="footer">

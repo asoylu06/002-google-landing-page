@@ -114,12 +114,60 @@ ul.right-side > li:nth-child(4) > a:hover {
     border-color: rgba(223,225,229,0);
 }
 
-.search-bar > img {
+#mic-icon {
     width: 14px;
     margin: 0 14px;
 }
 
-input[type="text"] {
+#glass-icon {
+    margin: 0;
+    padding: 0 6px;
+}
+
+.tooltip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tooltip > span {
+    margin-top: 82px;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    background: rgb(45, 45, 45);
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: bold;
+    height: 29px;   
+    line-height: 29px;
+    padding: 0px 10px;
+    position: fixed;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 9999;
+    box-shadow: rgba(0,0,0,.2) 0px 1px 4px;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out .3s;
+}
+
+.tooltiptext:after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent rgb(45, 45, 45) transparent ;
+}
+
+
+#search-input {
     width: 100vw;
     height: 32px;
     
@@ -287,3 +335,4 @@ button:hover {
     background-color: #f8fbff;
     border-color: #cce0fc;
 }
+
